@@ -18,6 +18,11 @@ function exampleSavePdf() {
     doc.text(`Média Itens no Carrinho: ${itensCart}`, 10, 40);
     doc.text(`Total de Itens no Carrinho: ${itensTotal}`, 10, 50);
     doc.text(`Total de Cliques no logo: ${itensClick}`, 10, 60);
+    doc.line(20, 30, 150, 30)
+    // doc.line(distancia da lateral, posição x, largura, posição y)
+
+    doc.addImage(logo, 'JPEG', 150, 15, 40, 40);
+    // doc.addImage(logo, 'JPEG', lateral, altura, larguradaimagem, alturadaimagem);
     doc.save("a4.pdf");
 }
 
