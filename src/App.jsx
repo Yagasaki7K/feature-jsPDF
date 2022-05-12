@@ -3,6 +3,7 @@ import { jsPDF } from "jspdf";
 import './App.css'
 
 function exampleSavePdf() {
+    let logo = 'https://assets-global.website-files.com/5e42772e6a8cfd42a9715206/5f57b3f463fbeb775c448ee4_CHIC17YGIHNR2CZD7HPKOTVODDOLGKY4%201.png'
     "use strict";
     const doc = new jsPDF();
     let invoicing = '3.200,16'
